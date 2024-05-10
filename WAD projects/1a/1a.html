@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelling Admin Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f8f9fa;
+      }
+
+      #sidebar {
+        height: 100vh;
+        width: 20%;
+        float: left;
+        background-color: #343a40;
+      }
+
+      #content {
+        background-color: #fff;
+        padding: 20px;
+      }
+
+      #footer {
+        background-color: #343a40;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      /* graph and table */
+      .float-child {
+        width: 50%;
+        float: left;
+        padding: 20px;
+      }
+
+      /* Styles for cards */
+      .card {
+        margin-bottom: 20px;
+      }
+
+      /* Colorful styles */
+      .bg-primary {
+        background-color: #007bff !important;
+      }
+
+      .bg-success {
+        background-color: #28a745 !important;
+      }
+
+      .bg-danger {
+        background-color: #dc3545 !important;
+      }
+
+      .bg-warning {
+        background-color: #ffc107 !important;
+      }
+
+      .bg-info {
+        background-color: #17a2b8 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar -->
+        <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar">
+          <div class="sidebar-sticky">
+            <h5 class="text-center mb-4">
+              <a
+                href="#"
+                style="color: #fff; font-size: 24px; font-weight: bold"
+                >Travelling Admin Dashboard</a
+              >
+            </h5>
+            <h5 class="text-center my-4"><a href="">Admin Dashboard</a></h5>
+            <h5 class="text-center my-4"><a href="">Wishlist</a></h5>
+            <h5 class="text-center my-4"><a href="">My Profile</a></h5>
+            <h5 class="text-center my-4"><a href="">Settings</a></h5>
+            <h5 class="text-center my-4"><a href="">Logout</a></h5>
+          </div>
+        </nav>
+
+        <!-- Content -->
+        <main
+          role="main"
+          class="col-md-9 ml-sm-auto col-lg-10 px-md-4"
+          id="content"
+        >
+          <!-- Cards Section -->
+          <div class="row">
+            <div class="col-md-6 col-lg-3">
+              <div class="card bg-primary text-white">
+                <div class="card-body">
+                  <h5 class="card-title">Total Users</h5>
+                  <p class="card-text">1200</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card bg-success text-white">
+                <div class="card-body">
+                  <h5 class="card-title">Total Bookings</h5>
+                  <p class="card-text">800</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card bg-success text-white">
+                <div class="card-body">
+                  <h5 class="card-title">Total Earnings</h5>
+                  <p class="card-text">$75,000</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card bg-danger text-white">
+                <div class="card-body">
+                  <h5 class="card-title">Total Expenses</h5>
+                  <p class="card-text">$50,000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Graph of Expenses Overview -->
+          <div class="row">
+            <div class="col-md-6">
+              <h4 class="my-3">Expenses Overview</h4>
+              <img
+                src="expenses overveiw.png"
+                alt=""
+                height="500"
+                width="100%"
+              />
+            </div>
+            <div class="col-md-6">
+              <h4 class="my-3">Booking Lists</h4>
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Sr No</th>
+                    <th>Booking ID</th>
+                    <th>Booking Type</th>
+                    <th>Booking Amount</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>12345</td>
+                    <td>Hotel Booking</td>
+                    <td>$1500</td>
+                    <td>Confirmed</td>
+                    <td><button class="btn btn-primary">View</button></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>45342</td>
+                    <td>Tour</td>
+                    <td>$4000</td>
+                    <td>Confirmed</td>
+                    <td><button class="btn btn-primary">View</button></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>54216</td>
+                    <td>Flight</td>
+                    <td>$3000</td>
+                    <td>Confirmed</td>
+                    <td><button class="btn btn-primary">View</button></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>31245</td>
+                    <td>Tour</td>
+                    <td>$2000</td>
+                    <td>Cancelled</td>
+                    <td><button class="btn btn-primary">View</button></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>54879</td>
+                    <td>Flight</td>
+                    <td>$5000</td>
+                    <td>Confirmed</td>
+                    <td><button class="btn btn-primary">View</button></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>61458</td>
+                    <td>Hotel Booking</td>
+                    <td>$2000</td>
+                    <td>Cancelled</td>
+                    <td><button class="btn btn-primary">View</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <p>&copy; 2024 Admin Dashboard</p>
+    </footer>
+  </body>
+</html>

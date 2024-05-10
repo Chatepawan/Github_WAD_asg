@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Department Information</title>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        .ui-grid-a {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          gap: 5px;
+        }
+        .ui-grid-a > div {
+          width: calc(50% - 10px); /* 20% width for each department with 5px gap */
+        }
+      </style>
+  </head>
+  <body>
+    <!-- Home Page -->
+    <div data-role="page" id="home">
+      <div data-role="header">
+        <h1>Department Names</h1>
+      </div>
+
+      <div data-role="content">
+        <div class="ui-grid-a">
+          <div class="ui-block-a">
+            <a href="#IT" class="ui-btn ui-shadow">IT</a>
+          </div>
+          <div class="ui-block-b">
+            <a href="#COMP" class="ui-btn ui-shadow">COMP</a>
+          </div>
+          <div class="ui-block-c">
+            <a href="#ETC" class="ui-btn ui-shadow">ETC</a>
+          </div>
+          <div class="ui-block-d">
+            <a href="#MECH" class="ui-btn ui-shadow">MECH</a>
+          </div>
+          <div class="ui-block-e">
+            <a href="#ELECT" class="ui-btn ui-shadow">ELECT</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Department Pages -->
+    <div data-role="page" id="IT">
+      <div data-role="header">
+        <h1>IT Department Information</h1>
+        <a href="#home" data-icon="back" data-rel="back" class="ui-btn-left"
+          >Back</a
+        >
+      </div>
+      <div data-role="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula
+          velit ut posuere condimentum. Vestibulum sed purus ut justo suscipit
+          tempus.
+        </p>
+        <p>
+          Nulla facilisi. Integer ultricies metus quis odio tincidunt, id
+          placerat purus convallis. Aliquam erat volutpat. Donec rutrum arcu vel
+          ligula dapibus, nec blandit ligula aliquet.
+        </p>
+      </div>
+    </div>
+
+    <div data-role="page" id="COMP">
+      <div data-role="header">
+        <h1>COMP Department Information</h1>
+        <a href="#home" data-icon="back" data-rel="back" class="ui-btn-left"
+          >Back</a
+        >
+      </div>
+      <div data-role="content">
+        <p>
+          Integer fermentum tortor ac consectetur malesuada. Aliquam ultricies
+          libero nec orci bibendum bibendum. Donec venenatis, leo nec venenatis
+          viverra, sem felis varius odio, a luctus lorem lectus non quam.
+        </p>
+        <p>
+          Mauris lacinia, dui non vestibulum viverra, metus ex auctor leo, id
+          accumsan ipsum tortor eget enim. Fusce convallis sapien nunc, non
+          vehicula tortor aliquam ac.
+        </p>
+      </div>
+    </div>
+
+    <div data-role="page" id="ETC">
+      <div data-role="header">
+        <h1>ETC Department Information</h1>
+        <a href="#home" data-icon="back" data-rel="back" class="ui-btn-left"
+          >Back</a
+        >
+      </div>
+      <div data-role="content">
+        <p>
+          Curabitur aliquet dictum justo, vel lobortis elit volutpat a. Vivamus
+          congue metus ac magna cursus eleifend. Praesent vehicula urna id erat
+          sollicitudin, eu efficitur urna rutrum.
+        </p>
+        <p>
+          Quisque maximus lacus risus, sit amet tempus velit tincidunt at.
+          Integer in velit eu sapien euismod ultricies. Vivamus blandit augue a
+          arcu sollicitudin, vel consectetur felis tincidunt.
+        </p>
+      </div>
+    </div>
+    <div data-role="page" id="MECH">
+      <div data-role="header">
+        <h1>MECH Department Information</h1>
+        <a href="#home" data-icon="back" data-rel="back" class="ui-btn-left"
+          >Back</a
+        >
+      </div>
+      <div data-role="content">
+        <p>
+          Vestibulum auctor euismod elit. Phasellus in diam ut eros consectetur
+          ullamcorper vel sit amet arcu. Sed sagittis sem non orci congue, ac
+          eleifend risus malesuada.
+        </p>
+        <p>
+          Proin at condimentum ex. Nam efficitur augue ac consectetur ultrices.
+          Donec eleifend volutpat ante, nec rutrum ante auctor vitae.
+        </p>
+      </div>
+    </div>
+    <div data-role="page" id="ELECT">
+      <div data-role="header">
+        <h1>ELECT Department Information</h1>
+        <a href="#home" data-icon="back" data-rel="back" class="ui-btn-left"
+          >Back</a
+        >
+      </div>
+      <div data-role="content">
+        <p>
+          Maecenas pulvinar augue et urna lobortis, vitae placerat nulla
+          sollicitudin. Phasellus sit amet dolor vel magna eleifend ullamcorper.
+          Etiam auctor consectetur sapien ut condimentum.
+        </p>
+        <p>
+          Vivamus eget placerat nisi, at vehicula tortor. Morbi pretium
+          sollicitudin massa nec fringilla. Vestibulum ante ipsum primis in
+          faucibus orci luctus et ultrices posuere cubilia curae;
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
